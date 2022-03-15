@@ -1,0 +1,37 @@
+main{
+    display: flex;
+    flex-direction: column;
+    overflow: hidden;
+}
+
+.contHead{
+    margin: 0px;
+}
+
+.contHeadArticle:hover{
+    cursor: pointer;
+    transition: 0.3s all;
+}
+
+.landing{
+    height: 340px;
+    margin-left: -5%;
+}
+
+.cont{
+    display: flex;
+}
+
+.contImg{
+    margin-top: 3%;
+    width: 500px;
+    margin-left: 27%;
+    margin-right: 5vw;
+    border-radius: 10px;
+}
+
+.contImg:hover{
+    cursor: pointer;
+    transform: scale(1.05);
+    transition: 0.3s all;
+}

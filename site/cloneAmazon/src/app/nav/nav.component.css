@@ -1,0 +1,96 @@
+*{
+    background-color: #fff15b;
+}
+
+.primaria{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    height: 8vh;
+}
+
+.primariaArticle{
+    margin-left: 6%;
+    margin-top: 0%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    width: 7%;
+    line-height: 0px;
+}
+
+.propaganda{
+    cursor: pointer;
+}
+
+.prop{
+    margin-top: 5%;
+    width: 340px;
+}
+
+input{
+    padding: 2px;
+    margin-left: -1%;
+    margin-top: 0.5%;
+    background-color: white;
+    width: 45vw;
+    height: 5.7vh;
+    border: none;
+    box-shadow: -1px -1px 5px grey;
+    border-radius: 7px;
+}
+
+
+.segunda{
+    display: flex;
+    flex-direction: row;
+    height: 7vh;
+}
+
+.cep{
+    color: rgb(32, 30, 30);
+    display: flex;
+    flex-direction: column;
+    margin-left: 7%;
+    cursor: pointer;
+    font-size: 15px;
+    border: 2px solid #fff15b;
+    line-height: 14px;
+    font-weight: 400;
+}
+
+li{
+    color: transparent;
+}
+
+ul{
+    margin-left: 3.2%;
+    text-decoration: none;
+    display: flex;
+}
+
+.conta{
+    margin-left: 20%;
+}
+
+a{
+    font-size: 14px;
+    margin-left: 20px;
+    text-decoration: none;
+    color: #7f782c;
+}
+
+a:hover{
+    cursor: pointer;
+    color: black;
+    transition: 0.3s all;
+}
+
+h3{
+    color: #232d7b;
+}
+
+input::placeholder{
+    color: rgba(199, 199, 199, 1);
+}
