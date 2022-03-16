@@ -1,0 +1,157 @@
+.sideBar{
+    margin-top: 2%;
+    margin-left: 7%;
+    width: 20vw;
+}
+
+main{
+    display: flex;
+}
+
+.marca{
+    display: flex;
+    flex-direction: column;
+}
+
+.cond{
+    display: flex;
+    flex-direction: column;
+}
+
+a{
+    color: black;
+    margin-bottom: 6%;
+    text-decoration: none;
+}
+
+.preco{
+    display: flex;
+    flex-direction: row;
+}
+
+.results{
+    font-weight: 500;
+    color: #333;
+}
+
+h2{
+    color: #333;
+}
+
+hr{
+    width: 10px;
+}
+
+input{
+    margin-right: 4%;
+    width: 26%;
+}
+
+.cont{
+    width: 80vw;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    overflow: hidden;
+    -webkit-box-align: stretch;
+    align-items: stretch;
+    place-content: stretch center;
+}
+
+.produto{
+    border-radius: 10px;
+    padding: 7px;
+    text-align: center;
+    margin-top: 7.2%;
+    margin-left: 2%;
+    height: 55vh;
+    width: 19vw;
+    background-color: #ffffff;
+}
+
+.precoTitle{
+    font-size: 25px;
+    margin-left: 10%;
+    text-align: start;
+    font-weight: 400;
+    margin-top: -3%;
+}
+
+.parcelas{
+    font-size: 14px;
+    margin-top: -14.5%;
+    text-align: start;
+    margin-left: 11%;
+}
+
+.pFrete{
+    margin-top: -2%;
+    color: green;
+    text-align: start;
+    margin-left: 10%;
+}
+
+.resumoProduto{
+    text-align: start;
+    margin-left: 10%;
+    margin-top: -10px;
+    font-size: 15px;
+}
+
+a{
+    color: #666666;
+}
+
+a:hover{
+    color: #333;
+}
+
+h4{
+    color : #333;
+}
+
+.full{
+    background-color: white;
+    border-radius: 10px;
+    display: flex;
+    flex-direction: row;
+    margin-bottom: 5%;
+
+}
+
+.contFull{
+    line-height: 20px;
+}
+
+span{
+    color: green;
+    margin-left: 5%;
+    margin-right: 5%;
+}
+
+.fullPrimaria{
+    align-items: center;
+    display: flex;
+}
+
+.pPrimary{
+    margin-left: 5%;
+    margin-top: -5%;
+}
+
+.check{
+    margin-left: 0%;
+    margin-top: 15%;
+}
+
+.inputPreço{
+    padding: 10px;
+    border: 2px solid gainsboro;
+    border-radius: 10px;
+}
+
+.produto:hover{
+    transform: scale(1.05);
+    cursor: pointer;
+    transition: 0.3s all;
+}
