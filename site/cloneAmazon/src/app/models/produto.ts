@@ -1,4 +1,5 @@
 export class Produto {
+    id:number;
     nome:string;
     preco:string;
     juros:boolean;
@@ -7,5 +8,5 @@ export class Produto {
     nicho:string;
     subnicho:string;
     foto:string;
-    
+
 }

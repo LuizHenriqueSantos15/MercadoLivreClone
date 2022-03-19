@@ -1,4 +1,6 @@
 import { Component, OnInit } from '@angular/core';
+import { Produto } from '../models/produto';
+import { ComprarService } from './comprar.service';
 
 @Component({
   selector: 'app-comprar',
@@ -7,9 +9,37 @@ import { Component, OnInit } from '@angular/core';
 })
 export class ComprarComponent implements OnInit {
 
-  constructor() { }
+  produto : Produto[];
+  pesquisa: string;
+  nomeProduto : string;
+  constructor(private service : ComprarService) { }
 
-  ngOnInit() {
+  ngOnInit() {;
+    this.carregarPesquisa();
+  }
+
+  carregarProd(){
+    this.service.carregarProduto().subscribe((produto : Produto[]) => {
+      this.produto = produto;
+      console.log(produto);
+    })
+  }
+
+  carregarPesquisa(){
+    this.service.carregarProdutoBySearch(this.service.receberPesquisa()).subscribe((produto : Produto[]) => {
+      this.produto = produto;
+      console.log(produto);
+    })
+  }
+
+  btnPesquisaClicado(){
+    this.service.carregarProdutoBySearch(this.pesquisa).subscribe((produto : Produto[]) => {
+      this.produto = produto;
+      console.log(produto);
+      this.produto.forEach(element => {
+        this.nomeProduto = this.pesquisa;
+      });
+    })
   }
 
 }

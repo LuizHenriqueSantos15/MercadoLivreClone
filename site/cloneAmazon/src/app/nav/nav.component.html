@@ -1,11 +1,17 @@
 <header class="primaria">
-  <article class="primariaArticle">
+  <article routerLink="" class="primariaArticle">
     <img width="65" src="https://extensions.vtexassets.com/arquivos/ids/156473/mercado-livre.png?v=637273976727030000" alt="">
 
     <span class="title"> <h3>mercado</h3> <h3>livre</h3></span>
   </article>
 
-  <input type="text" placeholder="Buscar produtos, marcas e muito mais">
+  <div class="form">
+    <input [(ngModel)]="produto" (change)="btnPesquisaClicado()" type="text" placeholder="Buscar produtos, marcas e muito mais">
+
+  <div class="btnA"> <a class="btn" (click)="btnPesquisaClicado()" routerLink="comprar">Pesquisar</a> </div>
+  </div>
+
+  
 
   <div class="propaganda">
     <article>

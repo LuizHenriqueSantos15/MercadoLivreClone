@@ -9,7 +9,33 @@
     height: 8vh;
 }
 
+.btnA{
+    width: 1px;
+    background-color: transparent;
+}
+
+.btn{
+    background-color: white;
+    margin-left: 11px;
+    width: 10%;
+    text-decoration: none;
+    padding: 7px;
+    border-radius: 10px;
+}
+.btn:hover{
+    background-color: beige;
+    cursor: pointer;
+    font-size: 15px;
+}
+
+.form{
+    align-items: center;
+    display: flex;
+    margin-left: 10px;
+}
+
 .primariaArticle{
+    cursor: pointer;
     margin-left: 6%;
     margin-top: 0%;
     display: flex;
@@ -93,4 +119,17 @@ h3{
 
 input::placeholder{
     color: rgba(199, 199, 199, 1);
+    padding: 10px;
+}
+
+/* responsividade */
+
+@media screen and (max-width: 700px) {
+    .primariaArticle{
+        display: none;
+    }
+
+    input{
+        display: none;
+    }
 }

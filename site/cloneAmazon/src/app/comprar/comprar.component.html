@@ -1,3 +1,49 @@
+<header class="primaria">
+  <article routerLink="" class="primariaArticle">
+    <img width="65" src="https://extensions.vtexassets.com/arquivos/ids/156473/mercado-livre.png?v=637273976727030000" alt="">
+
+    <span class="title"> <h3>mercado</h3> <h3>livre</h3></span>
+  </article>
+
+  <div class="form">
+    <input class="barra" [(ngModel)]="pesquisa" (change)="btnPesquisaClicado()" type="text" placeholder="Buscar produtos, marcas e muito mais">
+
+  <div class="btnA"> <a class="btn" (click)="btnPesquisaClicado()" routerLink="comprar">Pesquisar</a> </div>
+  </div>
+
+  
+
+  <div class="propaganda">
+    <article>
+      <img class="prop" src="https://http2.mlstatic.com/D_NQ_628973-MLA49296401121_032022-OO.web" alt="">
+    </article>
+  </div>
+</header>
+
+<header class="segunda">
+  <div class="cep">
+    <span style="color: black;"> Informe seu </span>
+    <span style="color: black;"> CEP </span>
+  </div>
+  <ul>
+    <li><a href="">Categorias</a></li>
+    <li><a href="">Ofertas do dia</a></li>
+    <li><a href="">Supermercado</a></li>
+    <li><a href="">Contato</a></li>
+    <li><a href="">Moda</a></li>
+    <li><a href="">Vender</a></li>
+  </ul>
+
+  <ul class="conta">
+    <li><a href="">Crie a sua conta</a></li>
+    <li><a href="">Entre</a></li>
+    <li><a href="">Compras</a></li>
+    <li><article><img src="" alt=""></article></li>
+  </ul>
+</header>
+
+
+
 <div class="head">
   <article>
     <img height="100" src="https://http2.mlstatic.com/D_NQ_NP_948298-MLA49272515424_032022-OO.jpg" alt="">
@@ -5,7 +51,7 @@
 </div>
 <main>
   <div class="sideBar">
-    <h2>Amplificador Orange</h2>
+    <h2>{{nomeProduto}}</h2>
     <h5 class="results">1 resultado</h5>
 
     <div class="full">
@@ -60,15 +106,15 @@
   </div>
 
   <div class="cont">
-    <div class="produto">
+    <div *ngFor="let prod of produto" class="produto">
       <article>
-        <img width="240" src="https://http2.mlstatic.com/D_NQ_NP_925290-MLA43138126547_082020-W.webp" alt="">
+        <img width="220" height="219" src={{prod.foto}} alt="">
 
-        <h4 class="precoTitle">R$ 3.001</h4>
+        <h4 class="precoTitle">R$ {{prod.preco}}</h4>
         <p class="parcelas">em 12x R$ 291</p>
-        <p class="pFrete">Frete Grátis</p>
+        <p class="pFrete">Frete {{prod.frete}}</p>
 
-        <p class="resumoProduto">Amplificador Orange Crush Bass 50</p>
+        <p class="resumoProduto">{{prod.resumo}}</p>
       </article>
     </div>
   </div>
